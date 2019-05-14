@@ -1,0 +1,34 @@
+{%extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+  
+  
+  <html>
+    
+    <head>
+        <style>
+        body {
+            background-color : black;
+        }
+            
+        </style>
+        
+        
+        
+    </head>
+    
+</html>
+  
+  <br><br><br>
+   <center><img src="{% static 'm.jpg' %}"></img></center><br><br><br>
+   <center><img src= "{% static 'h.jpg' %}"></img></center><br><Br><br><br>
+    
+      <center><img src = "{% static 'last3.jpg' %}"></img></center><Br><br><br>
+
+   <center><img src = "{% static 'last2.jpg' %}"></img></center><Br><br><br>
+   <center><img src= "{% static 'as.jpg' %}"></center><br><br><br>
+    <a href = "{% url 'main' %}"><img src = "{% static 'BACK.jpg' %}"></a></center>
+
+{% endblock %}

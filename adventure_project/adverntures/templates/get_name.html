@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+ <h1> 반가워용! {{ name }}님</h1>
+ <h2> 제가 123중에 하나 뽑았는데 뭐 뽑았는지 맞춰보세요.</h2>
+ <form action="{% url 'check_number' %}" method="POST">
+     {% csrf_token %}
+     <input type="text" name="user_number"/>
+     <input type="submit" value="결정"/>
+ </form>
+ 
+{% endblock %} 
